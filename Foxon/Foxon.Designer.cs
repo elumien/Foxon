@@ -32,11 +32,12 @@
             this.InputRichTextBox = new System.Windows.Forms.RichTextBox();
             this.MagicButton = new System.Windows.Forms.Button();
             this.OutputRichTextBox = new System.Windows.Forms.RichTextBox();
+            this.RainbowButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // InputRichTextBox
             // 
-            this.InputRichTextBox.Location = new System.Drawing.Point(21, 16);
+            this.InputRichTextBox.Location = new System.Drawing.Point(21, 18);
             this.InputRichTextBox.Name = "InputRichTextBox";
             this.InputRichTextBox.Size = new System.Drawing.Size(184, 386);
             this.InputRichTextBox.TabIndex = 0;
@@ -47,7 +48,7 @@
             this.MagicButton.BackColor = System.Drawing.Color.Indigo;
             this.MagicButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.MagicButton.ForeColor = System.Drawing.Color.Yellow;
-            this.MagicButton.Location = new System.Drawing.Point(225, 198);
+            this.MagicButton.Location = new System.Drawing.Point(225, 179);
             this.MagicButton.Name = "MagicButton";
             this.MagicButton.Size = new System.Drawing.Size(75, 23);
             this.MagicButton.TabIndex = 1;
@@ -57,11 +58,24 @@
             // 
             // OutputRichTextBox
             // 
-            this.OutputRichTextBox.Location = new System.Drawing.Point(320, 117);
+            this.OutputRichTextBox.Location = new System.Drawing.Point(320, 119);
             this.OutputRichTextBox.Name = "OutputRichTextBox";
             this.OutputRichTextBox.Size = new System.Drawing.Size(368, 184);
             this.OutputRichTextBox.TabIndex = 2;
             this.OutputRichTextBox.Text = "";
+            // 
+            // RainbowButton
+            // 
+            this.RainbowButton.BackColor = System.Drawing.Color.Indigo;
+            this.RainbowButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.RainbowButton.ForeColor = System.Drawing.Color.Yellow;
+            this.RainbowButton.Location = new System.Drawing.Point(225, 214);
+            this.RainbowButton.Name = "RainbowButton";
+            this.RainbowButton.Size = new System.Drawing.Size(75, 23);
+            this.RainbowButton.TabIndex = 3;
+            this.RainbowButton.Text = "Rainbow";
+            this.RainbowButton.UseVisualStyleBackColor = false;
+            this.RainbowButton.Click += new System.EventHandler(this.RainbowButton_Click);
             // 
             // MagicFox
             // 
@@ -69,6 +83,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Thistle;
             this.ClientSize = new System.Drawing.Size(709, 423);
+            this.Controls.Add(this.RainbowButton);
             this.Controls.Add(this.OutputRichTextBox);
             this.Controls.Add(this.MagicButton);
             this.Controls.Add(this.InputRichTextBox);
@@ -89,6 +104,7 @@
         private System.Windows.Forms.RichTextBox InputRichTextBox;
         private System.Windows.Forms.Button MagicButton;
         private System.Windows.Forms.RichTextBox OutputRichTextBox;
+        private System.Windows.Forms.Button RainbowButton;
     }
 }
 
