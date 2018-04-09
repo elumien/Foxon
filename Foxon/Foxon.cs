@@ -31,7 +31,9 @@ namespace Loxon
         {
             string inputText = InputRichTextBox.Text;
             inputText = inputText.Trim();
-            string[] variables = inputText.Split(null);
+            string[] variables = inputText.Split('\n');
+
+
             string outputText = "";
             for (int i = 0; i < variables.Length; i++)
             {
